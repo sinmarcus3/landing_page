@@ -363,7 +363,7 @@ i.arrow {
   #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 0px; /* Place the button at the bottom of the page */
+    bottom: 8px; /* Place the button at the bottom of the page */
     right: 25px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
@@ -373,15 +373,15 @@ i.arrow {
     cursor: pointer; /* Add a mouse pointer on hover */
     padding-left: 15px; /* Some padding */
     padding-right: 15px; /* Some padding */
-    padding-top: 7px; /* Some padding */
-    padding-bottom: 4px; /* Some padding */
-    border-radius: 1px; /* Rounded corners */
+    padding-top: 5px; /* Some padding */
+    padding-bottom: 5px; /* Some padding */
+    border-radius: 2px; /* Rounded corners */
     font-size: 14px; /* Increase font size */
     opacity:0.5    /* transparency */
 }
 
 #myBtn:hover {
-    background-color: #cc0033ff; /* Add a dark-grey background on hover */
+    background-color: #000; /* Add a dark-grey background on hover */
 }
 
 
