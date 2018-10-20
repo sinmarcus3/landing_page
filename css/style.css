@@ -239,6 +239,14 @@ i.arrow {
     width:50%;
 }
 
+.shrink-2-mobile{
+    width:300px;
+}
+
+.shrink-2-mobile2{
+    width:350px;
+}
+
 @media only screen and (max-width:1170px) {
     .left {
       margin-left:0px;
@@ -264,6 +272,12 @@ i.arrow {
     .text-left-80{
         float:left;
         width:100%;
+    }
+    .shrink-2-mobile{
+        width:250px;
+    }
+    .shrink-2-mobile2{
+        width:300px;
     }
 }
 
