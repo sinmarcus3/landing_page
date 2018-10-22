@@ -240,11 +240,11 @@ i.arrow {
 }
 
 .shrink-2-mobile{
-    width:300px;
+    width:500px;
 }
 
 .shrink-2-mobile2{
-    width:350px;
+    width:390px;
 }
 
 @media only screen and (max-width:1170px) {
