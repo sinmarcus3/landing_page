@@ -2,6 +2,7 @@
 <html>
 
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127093447-1"></script>
@@ -62,9 +63,9 @@
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-medium">
     <a href="index.html" class="w3-right-align w3-bar-item w3-padding-large w3-navbutton" style="text-decoration: none; font-size:18px">Home</a>
-    <a href="" class="w3-right-align w3-bar-item w3-navbutton w3-padding-large" style="text-decoration: none; font-size:18px">Dash</a>
+    <a href="" class="w3-right-align w3-bar-item w3-navbutton w3-padding-large" style="text-decoration: none; font-size:18px">The Dash</a>
     <a href="resources/Spot_Market_Contracts_Nov2018.pdf" class="w3-right-align w3-bar-item w3-navbutton w3-padding-large" style="text-decoration: none; font-size:18px">Resources</a>
-    <a href="mailto:info@hustleconsulting.co.nz?Subject=Hello" class="w3-right-align w3-bar-item w3-navbutton w3-padding-large" style="text-decoration: none; font-size:18px">Contact us</a>
+    <a href="mailto:info@hustleconsulting.co.nz?Subject=Hello" class="w3-right-align w3-bar-item w3-navbutton w3-padding-large" style="outline:none;text-decoration: none; font-size:18px">Contact us</a>
   </div>
 </div>
 
@@ -80,7 +81,7 @@
       <div style="position:relative;">
         <h1 class="w3-left-align w3-margin" style="color:#f7f7f7ff;font-size:36px"><strong>Welcome to the Hustle</strong></h1>
         <p class="w3-left-align w3-xlarge" style="padding:0px 20px; color:#f7f7f7ff; font-size:24px">Tackling challenging problems in complex markets.</p>
-        <a href="#js__scroll-to-start"><button class="w3-button button1 w3-padding-large w3-large" style="margin-top:20vh"><strong>Learn more</strong></button></a>
+        <a href="#js__scroll-to-start"><button class="w3-button button1 w3-padding-large w3-large" style="outline:none; margin-top:20vh"><strong>Learn more</strong></button></a>
         <!-- Use a button to pause/play the video with JavaScript -->
       </div>
       
@@ -90,7 +91,7 @@
    
 
 <!-- First Grid -->
-<div id="js__scroll-to-start" class="w3-container" style="overflow:hidden;padding-top:120px;padding-bottom:150px;background-color:#f7f7f7ff">
+<div id="js__scroll-to-start" class="w3-container" style="outline:none;overflow:hidden;padding-top:120px;padding-bottom:150px;background-color:#f7f7f7ff">
   <div class="w3-content">
     <div class="text-left-66">
       <h1 style="color:#3a0847ff; background-color:#f7f7f7ff"><strong>What we're about</strong></h1>
@@ -144,8 +145,8 @@
         Contact us below if you'd like to learn more.</p>
         
         <div>
-          <a href="mailto:info@hustleconsulting.co.nz?Subject=Hello"><button class="w3-button button1 ms-red-button w3-padding-large w3-large" style="margin-right:30px;padding-top:200px;padding-bottom:100px"><strong>Contact us</strong></button></a>
-          <a href="resources/Spot_Market_Contracts_Nov2018.pdf"><button class="w3-button ms-white-button w3-padding-large button1 w3-large" style="margin-left:30px; padding-top:200px;padding-bottom:100px"><strong>More info</strong></button></a>
+          <a href="mailto:info@hustleconsulting.co.nz?Subject=Hello"><button class="w3-button button1 ms-red-button w3-padding-large w3-large" style="outline:none;margin-right:30px;padding-top:200px;padding-bottom:100px"><strong>Contact us</strong></button></a>
+          <a href="resources/Spot_Market_Contracts_Nov2018.pdf"><button class="w3-button ms-white-button w3-padding-large button1 w3-large" style="outline:none;margin-left:30px; padding-top:200px;padding-bottom:100px"><strong>More info</strong></button></a>
       </div>
     </div>
     <div>
@@ -282,7 +283,7 @@
             <p style="color:#414a4fff; background-color:#e5e5e5ff">Feel free to enquire about any other capabilities that may not be listed.
             </p>
             </p>
-            <a href="mailto:info@hustleconsulting.co.nz?Subject=Hello"><button class="w3-button button1 ms-red-button w3-padding-large w3-large" style="margin-top:20px;float:right;"><strong>Contact us</strong></button></a>
+            <a href="mailto:info@hustleconsulting.co.nz?Subject=Hello"><button class="w3-button button1 ms-red-button w3-padding-large w3-large" style="outline:none;margin-top:20px;float:right;"><strong>Contact us</strong></button></a>
 
           </p>
       </div>
@@ -305,7 +306,67 @@
   <p style="color:#414a4fff">© Copyright 2018 <a href="mailto:info@hustleconsulting.co.nz?Subject=Hello" style="text-decoration:none" target="_blank"><span class="w3-hover-opacity" style="font-weight:bold; color:#3a0847ff">Hustle Limited</span></a></p>
   </footer>
 
+
 <script>
+    $(document).ready(function() {
+// https://css-tricks.com/snippets/jquery/smooth-scrolling/
+      // Select all links with hashes
+      $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+          // On-page links
+          if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+            && 
+            location.hostname == this.hostname
+          ) {
+            // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            // Does a scroll target exist?
+            if (target.length) {
+              // Only prevent default if animation is actually gonna happen
+              event.preventDefault();
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000, function() {
+                // Callback after animation
+                // Must change focus!
+                var $target = $(target);
+                $target.focus();
+                if ($target.is(":focus")) { // Checking if the target was focused
+                  return false;
+                } else {
+                  $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                  $target.focus(); // Set focus again
+                };
+              });
+            }
+          }
+        });
+      });
+</script>
+
+<script>
+$(document).ready(function() {
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            /* If the object is completely visible in the window, fade it in */
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({'opacity':'1'},800);   
+            }
+        }); 
+    });
+});
+</script>
+
+<script>  
     // Used to toggle the menu on small screens when clicking on the menu button
     function myFunction() {
         var x = document.getElementById("navDemo");
