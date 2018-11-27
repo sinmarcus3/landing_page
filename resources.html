@@ -1,7 +1,8 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
 
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127093447-1"></script>
@@ -13,12 +14,29 @@
   gtag('config', 'UA-127093447-1');
 </script>
 
-  <title>Hustle | Independent Consultancy Services</title>
-  <meta name="keywords" content="hustle, NZ, independent, consultancy, consultants, consulting, energy, energy services, management, services, electricity, water, asia pacific, natural resources, carbon, environmental, oil, gas, energy services, electric vehicles, EVs, solar, battery storage">
+ <!-- start social profiles (https://developers.google.com/structured-data/customize/social-profiles) -->
+ <script type="application/ld+json">
+  { 
+  "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "Hustle",
+  "url" : "https://hustleconsulting.co.nz/",
+  "logo": "https://hustleconsulting.co.nz/img/logo.png",
+  "sameAs" : [ 
+  "https://www.facebook.com/HustleLimited/",
+  "https://twitter.com/HustleLimited",
+  "https://www.linkedin.com/company/HustleLimited/"
+  ]
+  }
+  </script>
+  <!-- end social profiles -->
+
+  <title>Hustle | Energy Consultancy Services</title>
+  <meta name="keywords" content="hustle, nz, energy consulting, energy management, market advisor, microgrids, carbon management, demand response, industrial commercial customers, electricity, asia pacific">
   <meta name="description" content="Welcome to Hustle. Tackling challenging problems in complex markets. We're an independent consultancy and think tank with over 8 years of experience working in complex and regulated infrastructure markets across the Asia-Pacific region.">
   <meta name="author" content="Hustle Ltd">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
@@ -26,7 +44,6 @@
   <style>
   body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-  .fa-anchor,.fa-coffee {font-size:200px}
   </style>
 
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -34,88 +51,175 @@
 </head>
 <body>
 
+  
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-card w3-large" style="color:#414a4fff;background-color:#fff">
-      <a href="index.html" class="">
+      <a href="" class="">
           <img style="width:170px;height:auto;margin-top:15px;margin-bottom:10px;margin-left:20px;margin-right:10px" src="img/logo.png" alt=""></a>
     <a class="w3-bar-item w3-button w3-hide-medium w3-right w3-hover-white" style="font-size:30px; padding-top:15px; padding-bottom:10px" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
   </div>
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-medium w3-large">
-    <a href="index.html" class="w3-right-align w3-bar-item w3-padding-large w3-navbutton" style="text-decoration: none">Home</a>
-    <a href="projects.html" class="w3-right-align w3-bar-item w3-navbutton w3-padding-large" style="text-decoration: none">Projects</a>
-    <a href="mailto:info@hustleconsulting.co.nz?Subject=Hello" class="w3-right-align w3-bar-item w3-navbutton w3-padding-large" style="text-decoration: none">Contact us</a>
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-medium">
+    <a href="index.html" class="w3-right-align w3-bar-item w3-padding-large w3-navbutton" style="text-decoration: none; font-size:18px">Home</a>
+    <a href="" class="w3-right-align w3-bar-item w3-navbutton w3-padding-large" style="text-decoration: none; font-size:18px">Our Dash</a>
+    <a href="resources.html" class="w3-right-align w3-bar-item w3-navbutton w3-padding-large" style="text-decoration: none; font-size:18px">Resources</a>
+    <a href="mailto:info@hustleconsulting.co.nz?Subject=Hello" class="w3-right-align w3-bar-item w3-navbutton w3-padding-large" style="outline:none;text-decoration: none; font-size:18px">Contact us</a>
   </div>
 </div>
 
 <!-- Header -->
-<div class="w3-container w3-center s-swiper" style="padding-top:400px;padding-bottom:200px;padding-left:16px;padding-right:16px; color:#f7f7f7ff; background: url('img/windmills.jpeg');">
+<div class="w3-container w3-center s-swiper" style="padding-top:400px;padding-bottom:200px;padding-left:16px;padding-right:16px;color:#f7f7f7ff; background: url('img/header_hero.jpg');">
   <h1 class="w3-left-align w3-margin w3-jumbo" style="color:#f7f7f7ff"><strong>Tools & Resources</strong></h1>
   <p class="w3-left-align w3-xlarge" style="padding:0px 20px; color:#f7f7f7ff">Find out more below.</p>
   <a href="#js__scroll-to-start"><button class="w3-button learn-more-button button1 w3-padding-large w3-large" style="margin-top:20vh"><strong>Learn more</strong></button></a>
 </div>
 
 
-<!-- Second Grid -->
-<div id="" class="w3-row-padding w3-padding-64 w3-container" style="background-color:#e5e5e5ff">
+<!-- First Grid -->
+<div id="js__scroll-to-start" class="w3-container" style="outline:none;overflow:hidden;padding-top:120px;padding-bottom:50px;background-color:#f7f7f7ff">
   <div class="w3-content">
-    
-    <div class="" style="float:left;">
-      <img style="width:300px;height:auto;padding-top:40px;padding-left:0px;padding-bottom:100px;padding-right:100px;" src="img/key-projects.png" alt="">
+    <div class="text-left-66">
+      <h1 style="color:#3a0847ff; background-color:#f7f7f7ff"><strong>Our resources</strong></h1>
+       
+          <ul style="color:#414a4fff;padding-left:18px;margin-top:20px">
+            <li style="margin-bottom:5px;padding-left:1em"><a href="resources\CV v3 27 Nov 2018.pdf" style="text-decoration: none;">Current CV 2018/19</a></li>
+            <li style="margin-bottom:5px;padding-left:1em;margin-bottom:25px;"><a href="resources\Spot_Market_Contracts_Nov2018.pdf" style="text-decoration: none;">Spot Price Retail Contracts — How to manage your energy costs?</a></li>
+          </ul>
     </div>
-
-    <div class="">
-      <h1 style="color:#3a0847ff; background-color:#e5e5e5ff"><strong>Complex markets</strong></h1>
-
-      <p style="color:#414a4fff; margin-bottom:20px">We have an extensive knowledge and understanding of all types of complex market environments, and many of the present and future challenges faced by companies 
-        operating in these spaces.</p>
-        <p style="color:#414a4fff; margin-bottom:20px">
-        Our expansive experience ranges from working in derivatives trading in the Electricity sectors, to applying Regulatory Economics to Water Markets. There is no problem or challenge we can't tackle.
-        </p>
-        <p style="color:#414a4fff; margin-bottom:50px">
-        Contact us below if you'd like to find out more.</p>
-        <div>
-          <a href="mailto:info@hustleconsulting.co.nz?Subject=Hello"><button class="w3-button button1 ms-red-button w3-padding-large w3-large" style="margin-right:30px;padding-top:200px;padding-bottom:100px"><strong>Contact us</strong></button></a>
-          <a href="#"><button class="w3-button button1 ms-white-button w3-padding-large w3-large" style="margin-left:30px; padding-top:200px;padding-bottom:100px"><strong>More info...</strong></button></a>
-      </div>
-      </div>
+        
   </div>
 </div>
 
 <!-- First Grid -->
-
-
-<div class="w3-row-padding w3-padding-64 w3-container" style="background-color:#f0f0eeff">
-  <div style="margin-left:80px">
-
-    <iframe width=80% height=600px src="https://docs.google.com/spreadsheets/d/1-67F4VdGL9UVftokcz5UNhscjZvjUUeq20cYXjcKG88/edit?usp=sharing/pubhtml?widget=true & single=true & chrome=false"></iframe>
+<div id="js__scroll-to-start" class="w3-container" style="outline:none;overflow:hidden;padding-top:120px;padding-bottom:150px;background-color:#f7f7f7ff">
+  <div class="w3-content">
+      <h1 style="color:#3a0847ff; background-color:#f7f7f7ff"><strong>Our tools</strong></h1>
+       
+          <ul style="color:#414a4fff;padding-left:18px;margin-top:20px">
+            <li style="margin-bottom:5px;padding-left:1em">To be completed</li>
+          </ul>
   </div>
 </div>
 
 
-
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center" style="background-color:#fff">  
+<footer class="w3-container w3-padding-64 w3-center" style="background-color:#fff">
   <div class="w3-xlarge w3-padding-32" style="color:#3a0847ff">
     <a href="https://www.facebook.com/hustlelimited" target="_blank"><img style="width:28px;height:auto;" class="w3-hover-opacity" src="img/social/F_icon.svg" title="@HustleLimited | Like us on Facebook"></a>
     <a href="https://twitter.com/HustleLimited" target="_blank"><img style="width:28px;height:auto;" class="w3-hover-opacity" src="img/social/Twitter_Logo_WhiteOnBlue.svg" title="@HustleLimited | Follow us on Twitter"></a>
     <a href="https://www.linkedin.com/company/hustlelimited/" target="_blank"><img style="width:28px;height:auto;" class="w3-hover-opacity" src="img/social/LinkedIn-Icon-Square.svg" title="/HustleLimited | Follow us on Linkedin"></i></a>
   </div>
-  <p style="color:414a4fff">© Copyright 2018 <a href="mailto:info@hustleconsulting.co.nz?Subject=Hello" style="text-decoration:none" target="_blank"><span class="w3-hover-opacity" style="font-weight:bold; color:#3a0847ff">Hustle Limited</span></a></p>
+  <p style="color:#414a4fff">© Copyright 2018 <a href="mailto:info@hustleconsulting.co.nz?Subject=Hello" style="text-decoration:none" target="_blank"><span class="w3-hover-opacity" style="font-weight:bold; color:#3a0847ff">Hustle Limited</span></a></p>
   </footer>
 
+
 <script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
+    $(document).ready(function() {
+// https://css-tricks.com/snippets/jquery/smooth-scrolling/
+      // Select all links with hashes
+      $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+          // On-page links
+          if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+            && 
+            location.hostname == this.hostname
+          ) {
+            // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            // Does a scroll target exist?
+            if (target.length) {
+              // Only prevent default if animation is actually gonna happen
+              event.preventDefault();
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000, function() {
+                // Callback after animation
+                // Must change focus!
+                var $target = $(target);
+                $target.focus();
+                if ($target.is(":focus")) { // Checking if the target was focused
+                  return false;
+                } else {
+                  $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                  $target.focus(); // Set focus again
+                };
+              });
+            }
+          }
+        });
+      });
+</script>
+
+<script>
+$(document).ready(function() {
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            /* If the object is completely visible in the window, fade it in */
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({'opacity':'1'},800);   
+            }
+        }); 
+    });
+});
+</script>
+
+<script>  
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
     }
-}
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+
+    // Get the video
+    var video = document.getElementById("myVideo");
+
+    // Get the button
+    var btn = document.getElementById("myBtn2");
+
+    // Pause and play the video, and change the button text
+    function myFunction2() {
+        if (video.paused) {
+            video.play();
+            btn.innerHTML = "<i class='fa fa-pause'></i>";
+        } else {
+            video.pause();
+            btn.innerHTML = "<i class='fa fa-play'></i>";
+        }
+    }
+
 </script>
 
 <!-- Start of HubSpot Embed Code -->
