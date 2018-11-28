@@ -384,7 +384,8 @@ i.arrow {
     padding-bottom: 5px; /* Some padding */
     border-radius: 2px; /* Rounded corners */
     font-size: 14px; /* Increase font size */
-    opacity:0.5    /* transparency */
+    opacity:0.5;    /* transparency */
+    transition-duration:0.5s;
 }
 
 #myBtn:hover {
