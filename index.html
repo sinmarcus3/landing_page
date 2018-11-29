@@ -10,7 +10,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-127093447-1');
 </script>
 
@@ -157,11 +156,13 @@
 <!-- Third Grid -->
 <div id="js__scroll-to-info" class="w3-row-padding w3-container hide-image" style="outline:none;padding-top:10vh; padding-bottom:5vh; background-color:#f7f7f7ff">
   <div class="w3-content">
-      <h1 style="text-align:center;margin-bottom:40px;color:#3a0847ff; background-color:#f7f7f7ff"><strong>Our experience</strong></h1>
-      <h4 style="text-align:center;margin-bottom:80px;color:#414a4fff">
+    <div class="center">
+      <h1 style="margin-bottom:40px;color:#3a0847ff; background-color:#f7f7f7ff"><strong>Our experience</strong></h1>
+      <h4 style="margin-bottom:80px;color:#414a4fff">
           We’ve worked with an array of stakeholders to help solve complex problems in energy. Our projects ranges from helping clients with
           energy management, environmental and sustainability issues, and carbon trading / management, to helping stakeholders to navigate through policy frameworks for natural resource allocations.
       </h4>
+    </div>
     <div class="text-left-55">
       <h5 style="color:#414a4fff; background-color:#f7f7f7ff; font-weight:bold;" class="w3-padding-32">Market Modelling<span style="color: #cc0033ff;font-size:20px"> / </span>
         <span style="color: #cc0033ff;">Korean Power Exchange (KPX)</span></h5>
@@ -376,10 +377,8 @@ $(document).ready(function() {
             x.className = x.className.replace(" w3-show", "");
         }
     }
-
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function() {scrollFunction()};
-
     function scrollFunction() {
         if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
             document.getElementById("myBtn").style.display = "block";
@@ -387,20 +386,15 @@ $(document).ready(function() {
             document.getElementById("myBtn").style.display = "none";
         }
     }
-
     // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
-
-
     // Get the video
     var video = document.getElementById("myVideo");
-
     // Get the button
     var btn = document.getElementById("myBtn2");
-
     // Pause and play the video, and change the button text
     function myFunction2() {
         if (video.paused) {
@@ -411,7 +405,6 @@ $(document).ready(function() {
             btn.innerHTML = "<i class='fa fa-play'></i>";
         }
     }
-
 </script>
 
 <!-- Start of HubSpot Embed Code -->

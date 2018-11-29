@@ -213,6 +213,10 @@ i.arrow {
     float:right;
 }
 
+.center{
+    text-align:center;
+}
+
 
 .text-left-66{
     float:left;
@@ -252,6 +256,9 @@ i.arrow {
       margin-left:0px;
       float:left;
       width:100%;
+    }
+    .center{
+        text-align:left;
     }
     .text-left-66{
         float:left;
@@ -415,5 +422,3 @@ i.arrow {
 #myBtn2:hover {
     background-color: #000; /* Add a dark-grey background on hover */
 }
-
-
