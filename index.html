@@ -52,18 +52,18 @@
 
   
 <!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-card w3-large" style="color:#414a4fff;background-color:#fff">
-      <a href="index.html">
-          <img style="width:170px;height:auto;margin-top:15px;margin-bottom:10px;margin-left:20px;margin-right:10px" src="img/logo.png" alt=""></a>
-          
+<div id="header">
+  <div class="w3-bar">
+          <img id="header_logo" src="img/logo.png" alt="">
+          <a href="index.html" style="text-decoration:none;">
+          <img id="header_logo-small" src="img/logo-small.png" alt=""></a>
           <a class="w3-bar-item w3-button w3-right" style="transition-duration:0.5s;font-size:30px; padding-top:15px; padding-bottom:10px" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-navbutton">
     <a href="index.html" class="w3-right-align w3-bar-item w3-padding-large " style="transition-duration:0.5s;text-decoration:none; font-size:18px">Home</a>
-    <a href="" class="w3-right-align w3-bar-item w3-padding-large" style="transition-duration:0.5s;text-decoration:none; font-size:18px">Dashboard</a>
+    <a href="blogger.html" class="w3-right-align w3-bar-item w3-padding-large" style="transition-duration:0.5s;text-decoration:none; font-size:18px">Blogger</a>
     <a href="resources.html" class="w3-right-align w3-bar-item w3-padding-large" style="transition-duration:0.5s;text-decoration:none; font-size:18px">Resources</a>
     <a href="mailto:info@hustleconsulting.co.nz?Subject=Hello" class="w3-right-align w3-bar-item w3-padding-large" style="transition-duration:0.5s;outline:none;text-decoration: none; font-size:18px">Contact us</a>
   </div>
@@ -72,15 +72,15 @@
 <button onclick="topFunction()" id="myBtn" title="Back to top"><i class="arrow up"></i></button>
 
 <!-- Header w video-->
-    <div class="w3-container w3-center s-swiper bg-wideimg" style="padding-top:400px;padding-bottom:285px;padding-left:16px;padding-right:16px; color:#f7f7f7ff; background: url('img/hero.png');">
+    <div class="w3-container w3-center s-swiper bg-wideimg" style="padding-top:400px;padding-bottom:285px;padding-left:16px;padding-right:16px; color:#f7f7f7; background: url('img/hero.png');">
         <div class="video-color"></div>
         <video autoplay muted loop id="myVideo" class="responsive-video">
           <source src="img/HK_Timelapses_01.mp4" type="video/mp4">
         </video>
       
       <div style="position:relative;">
-        <h1 class="w3-left-align w3-margin" style="color:#f7f7f7ff;font-size:36px"><strong>Welcome to the Hustle</strong></h1>
-        <p class="w3-left-align w3-xlarge" style="padding:0px 20px; color:#f7f7f7ff; font-size:24px">Tackling challenging problems in complex markets.</p>
+        <h1 class="w3-left-align" style="padding:16px;color:#f7f7f7">Welcome to the Hustle</h1>
+        <h2 class="w3-left-align" style="padding:16px;color:#f7f7f7">Tackling challenging problems in complex markets.</h2>
         <a href="#js__scroll-to-start"><button class="w3-button button1 w3-padding-large w3-large" style="outline:none; margin-top:20vh"><strong>Learn more</strong></button></a>
         <!-- Use a button to pause/play the video with JavaScript -->
       </div>
@@ -91,21 +91,21 @@
    
 
 <!-- First Grid -->
-<div id="js__scroll-to-start" class="w3-container" style="outline:none;overflow:hidden;padding-top:120px;padding-bottom:150px;background-color:#f7f7f7ff">
+<div id="js__scroll-to-start" class="w3-container" style="outline:none;overflow:hidden;padding-top:120px;padding-bottom:150px;background-color:#f7f7f7">
   <div class="w3-content">
     <div class="text-left-66">
-      <h1 style="color:#3a0847ff; background-color:#f7f7f7ff"><strong>What we're about</strong></h1>
-      <h4 style="color:#414a4fff; background-color:#f7f7f7ff; font-weight:bold" class="w3-padding-32">Hustle<span style="color: #cc0033ff;font-size:20px"> / </span>
-        <span style="color: #cc0033ff;">Energy as a service</span></h4>
+      <h1 style="background-color:#f7f7f7">What we're about</h1>
+      <h2 style="background-color:#f7f7f7" class="w3-padding-32">Hustle<span style="color: #cc0033ff"> / </span>
+        Energy as a service</h2>
 
-      <p style="color:#414a4fff">Hustle is an energy services company with over 8 years of experience working in complex and regulated 
+      <p>Hustle is an energy services company with over 8 years of experience working in complex and regulated 
         infrastructure markets in the Asia-Pacific.
         We've worked in both developing and developed countries such as the Philippines, Singapore, China, Hong Kong, 
         South Korea, Malaysia, New Zealand and Australia.
 
-        <p style="color:#414a4fff">Our project experience spans across a range of complex issues in the energy sector.</p>
+        <p>Our project experience spans across a range of complex issues in the energy sector.</p>
         
-          <ul style="color:#414a4fff;padding-left:18px;margin-top:20px">
+          <ul style="padding-left:18px;margin-top:20px">
             <li style="margin-bottom:5px;padding-left:1em">Project Management,</li>
             <li style="margin-bottom:5px;padding-left:1em">Due Diligence,</li>
             <li style="margin-bottom:5px;padding-left:1em">Transactions,</li>
@@ -114,7 +114,7 @@
             <li style="margin-bottom:5px;padding-left:1em">Demand Management,</li>
             <li style="margin-bottom:5px;padding-left:1em;margin-bottom:25px;">Strategy & Market Analysis.</li>
           </ul>
-        <p style="color:#414a4fff">
+        <p>
           We have hands-on experience with hedging, risk management, and derivatives trading in the energy markets, and can provide consulting services 
           in both the physical and financial carbon and commodity trading markets.
         </p>
@@ -127,18 +127,18 @@
 </div>
 
 <!-- Second Grid -->
-<div id="" class="w3-row-padding w3-container" style="padding-top:10vh; padding-bottom:10vh; background-color:#e5e5e5ff;">
+<div class="w3-row-padding w3-container" style="padding-top:10vh; padding-bottom:10vh; background-color:#e5e5e5;">
   <div class="w3-content">
 
     <div class="text-right-60">
-      <h1 style="color:#3a0847ff; background-color:#e5e5e5ff"><strong>Facing challenges</strong></h1>
-
-      <p style="color:#414a4fff; margin-bottom:20px">Our extensive knowledge and understanding of different complex market structures allows us to conceptualize many of the present and future challenges faced by companies 
+      <h1 style="margin-bottom:30px">Facing challenges</h1>
+      <h2 style="margin-bottom:30px">How we approach complex problems</h2>
+      <p>Our extensive knowledge and understanding of different complex market structures allows us to conceptualize many of the present and future challenges faced by companies 
         operating in the energy space.</p>
-        <p style="color:#414a4fff; margin-bottom:20px">
+        <p>
         Our experience ranges from building forecasting and optimisation models for large-scale energy users, to helping market participants navigate complex regulatory frameworks.
         </p>
-        <p style="color:#414a4fff; margin-bottom:50px">
+        <p style="margin-bottom:50px">
         There is no problem or challenge we can't tackle. Contact us below if you'd like to learn more.</p>
         
         <div>
@@ -147,7 +147,7 @@
       </div>
     </div>
     <div>
-      <img class="shrink-2-mobile2" style="height:auto;padding-top:50px;padding-left:0px;padding-bottom:80px;padding-right:100px;" src="img/gametree.png" alt="">
+      <img class="shrink-2-mobile2" style="opacity:0.7;height:auto;padding-top:120px;padding-left:30px;padding-bottom:80px;padding-right:50px;" src="img/gametree.png" alt="">
     </div>
 
   </div>
@@ -156,21 +156,22 @@
 
 
 <!-- Third Grid -->
-<div id="js__scroll-to-info" class="w3-row-padding w3-container hide-image" style="outline:none;padding-top:10vh; padding-bottom:5vh; background-color:#f7f7f7ff">
+<div id="js__scroll-to-info" class="w3-row-padding w3-container hide-image" style="outline:none;padding-top:10vh; padding-bottom:5vh; background-color:#f7f7f7">
   <div class="w3-content">
     <div class="center">
-      <h1 style="margin-bottom:40px;color:#3a0847ff; background-color:#f7f7f7ff"><strong>Our experience</strong></h1>
-      <h4 style="margin-bottom:80px;color:#414a4fff">
-          We’ve worked with an array of stakeholders to help solve complex problems in energy. Our projects ranges from advising clients on
-          energy and demand management issues to helping stakeholders navigate regulations to participate in markets.
-      </h4>
+      <h1 style="margin-bottom:40px"><strong>Our experience</strong></h1>
+      <h3 style="margin-bottom:25px;text-align:justify">
+          We’ve worked with an array of different stakeholders to help solve complex problems in energy. Our projects ranges from advising clients on
+          energy and demand management issues, to helping stakeholders navigate through regulations to participate in markets.
+      </h3>
+      <hr style="margin-bottom:50px;margin-right:0.1em">
     </div>
     <div class="text-left-55">
-      <h5 style="color:#414a4fff; background-color:#f7f7f7ff; font-weight:bold;" class="w3-padding-32">Financial Modelling<span style="color: #cc0033ff;font-size:20px"> / </span>
-        <span style="color: #cc0033ff;">Korean Power Exchange (KPX)</span></h5>
+      <h2 class="w3-padding-32">Financial Modelling<span style="color: #cc0033"> / </span>
+        Korean Power Exchange (KPX)</h2>
 
-      <p style="color:#414a4fff; margin-right:20px">Performed a valuation of returns for an acquisition of a power asset portfolio which consisted of 300 MW of generation capacity.</p>
-      <p style="color:#414a4fff; margin-right:20px">Forecasted the expected Korea Power Exchange (KPX) payments for the asset portfolio by using a non-linear programming model that was 
+      <p style="margin-right:20px">Performed a valuation of returns for an acquisition of a power asset portfolio which consisted of 300 MW of generation capacity.</p>
+      <p style="margin-right:20px">Forecasted the expected Korea Power Exchange (KPX) payments for the asset portfolio by using a non-linear programming model that was 
         specific to the unique structure and characteristics of the Korean electricity market.</p>
     </div>
     <div class="left">
@@ -179,30 +180,30 @@
   </div>
 </div>
 
-<div id="" class="w3-row-padding w3-container hide-image" style="padding-top:2vh; padding-bottom:5vh; background-color:#f7f7f7ff">
+<div class="w3-row-padding w3-container hide-image" style="padding-top:2vh; padding-bottom:5vh; background-color:#f7f7f7">
   <div class="w3-content">
     <div class="text-right-50">
-      <h5 style="color:#414a4fff; background-color:#f7f7f7ff; font-weight:bold" class="w3-padding-32">Ancillary Services Market<span style="color: #cc0033ff;font-size:20px"> / </span>
-        <span style="color: #cc0033ff;">Philippine WESM</span></h5>
+      <h2 class="w3-padding-32">Ancillary Services Market<span style="color: #cc0033"> / </span>
+        Philippine WESM</h2>
 
-      <p style="color:#414a4fff">Advised two counterparties on different contracting arrangements by evaluating the financial return from participating in the Philippines ancillary services market.</p>
-        <p style="color:#414a4fff"> Recommended several partnership options for the joint venture, and modelled a joint investment value of up to $100 million USD (17-year NPV).</p>
+      <p>Advised two counterparties on different contracting arrangements by evaluating the financial return from participating in the Philippines ancillary services market.</p>
+        <p> Recommended several partnership options for the joint venture, and modelled a joint investment value of up to $100 million USD (17-year NPV).</p>
     </div>
-    <div class="" style="float:left width=100%">
+    <div style="float:left width=100%">
       <img style="width:400px;height:auto;padding-top:50px;padding-right:30px" src="img/Philippines-hydro-2.png" alt="">
     </div>
   </div>
 </div>
 
-<div id="" class="w3-row-padding w3-container hide-image" style="padding-top:2vh; padding-bottom:5vh; background-color:#f7f7f7ff">
+<div class="w3-row-padding w3-container hide-image" style="padding-top:2vh; padding-bottom:5vh; background-color:#f7f7f7">
   <div class="w3-content">
     <div class="text-left-55">
-      <h5 style="color:#414a4fff; background-color:#f7f7f7ff; font-weight:bold" class="w3-padding-32">Risk Management & Trading<span style="color: #cc0033ff;font-size:20px"> / </span>
-        <span style="color: #cc0033ff;">APAC Markets</span></h5>
-      <p style="color:#414a4fff">Worked with a NZ-based fund focused on Carbon Credits, Electricity Futures / Options (ASX), and Financial Transmission 
+      <h2 class="w3-padding-32">Risk Management & Trading<span style="color: #cc0033"> / </span>
+        <span style="color: #333333;">APAC Markets</span></h2>
+      <p>Worked with a NZ-based fund focused on Carbon Credits, Electricity Futures / Options (ASX), and Financial Transmission 
         Rights (FTRs) in both New Zealand and Australian markets.
         </p>
-        <p style="color:#414a4fff">
+        <p>
         Services included analysing the value of different trading strategies, developing stochastic trading models to measure and monitor trading performance and daily returns, 
         and provided middle office and risk management support to the trading team (i.e., Value-at-Risk modelling).
       </p>
@@ -213,29 +214,29 @@
   </div>
 </div>
 
-<div id="" class="w3-row-padding w3-container hide-image" style="padding-top:2vh; padding-bottom:5vh; background-color:#f7f7f7ff">
+<div class="w3-row-padding w3-container hide-image" style="padding-top:2vh; padding-bottom:5vh; background-color:#f7f7f7">
     <div class="w3-content">
       <div class="text-right-50">
-        <h5 style="color:#414a4fff; background-color:#f7f7f7ff; font-weight:bold" class="w3-padding-32">Regulatory Economics<span style="color: #cc0033ff;font-size:20px"> / </span>
-          <span style="color: #cc0033ff;">NEMS (Singapore)</span></h5>
+        <h2 class="w3-padding-32">Regulatory Economics<span style="color: #cc0033"> / </span>
+          NEMS (Singapore)</h2>
   
-        <p style="color:#414a4fff">Consulted on the 2011/2012 Regulatory Reset of Vesting Contracts, and also advised on a secondary price cap for the Singaporean wholesale electricity market (the National Electricity Market of Singapore).</p>
-          <p style="color:#414a4fff"> Services involved simulating the wholesale and ancillary services market prices to estimate the dynamics and behaviours of industry participants, and key drivers of business decisions.</p>
+        <p>Consulted on the 2011/2012 Regulatory Reset of Vesting Contracts, and also advised on a secondary price cap for the Singaporean wholesale electricity market (the National Electricity Market of Singapore).</p>
+          <p> Services involved simulating the wholesale and ancillary services market prices to estimate the dynamics and behaviours of industry participants, and key drivers of business decisions.</p>
       </div>
-      <div class="" style="float:left width=100%">
+      <div style="float:left width=100%">
         <img style="width:400px;height:auto;padding-top:50px;padding-bottom:10px;padding-right:30px" src="img/SG-solar-2.png" alt="">
       </div>
     </div>
   </div>
   
-  <div id="" class="w3-row-padding w3-container hide-image" style="padding-top:2vh; padding-bottom:5vh; background-color:#f7f7f7ff">
+  <div class="w3-row-padding w3-container hide-image" style="padding-top:2vh; padding-bottom:5vh; background-color:#f7f7f7">
     <div class="w3-content">
       <div class="text-left-55">
-        <h5 style="color:#414a4fff; background-color:#f7f7f7ff; font-weight:bold" class="w3-padding-32">Market Research & Analysis<span style="color: #cc0033ff;font-size:20px"> / </span>
-          <span style="color: #cc0033ff;">US, Europe & APAC</span></h5>
-        <p style="color:#414a4fff">Consulted with a large New Zealand-based gen-tailer on market strategies to enhance ‘value-add’ services to their large-sized commercial and industrial customer demographics.
+        <h2 class="w3-padding-32">Market Research & Analysis<span style="color: #cc0033"> / </span>
+          US, Europe & APAC</h2>
+        <p>Consulted with a large New Zealand-based gen-tailer on market strategies to enhance ‘value-add’ services to their large-sized commercial and industrial customer demographics.
           </p>
-          <p style="color:#414a4fff">
+          <p>
           Conducted a SWOT analysis and environmental scan of local and international market trends in Energy Services, and presented key recommendations of strategic partners, major competitors, and likelihood of competition from other market players to key executive staff.
         </p>
       </div>
@@ -248,13 +249,13 @@
 
 
 <!-- Fourth Grid -->
-<div id="js__scroll-to-capability" class="w3-row-padding w3-container" style="padding-top:8vh; padding-bottom:10vh; background-color:#e5e5e5ff">
+<div id="js__scroll-to-capability" class="w3-row-padding w3-container" style="padding-top:8vh; padding-bottom:10vh; background-color:#e5e5e5">
     <div class="w3-content">
       <div class="text-left-80">
-        <h1 style="color:#3a0847ff; background-color:#e5e5e5ff"><strong>Our capabilities</strong></h1>
-        <h4 style="color:#414a4fff; background-color:#e5e5e5ff; font-weight:bold" class="w3-padding-32">Project Management & Quantitative Modelling</h4>
-  
-        <p style="color:#414a4fff; background-color:#e5e5e5ff">
+        <h1>Our capabilities</h1>
+        <h2 style="padding-top:30px;padding-bottom:10px">Project Management & Quantitative Modelling</h2>
+        <hr style="margin-left:0em;margin-bottom:35px">
+        <p>
             We help clients understand and navigate through complex issues through the use of data analysis, 
             empirical modelling, and data visualisation. Through our projects we have developed forecasting or predictive models and quantitative tools that apply to 
              various industry sectors including forestry, water, energy, electricity (wholesale, transmission, distribution, retail), telco, and the financial markets. 
@@ -262,18 +263,18 @@
             <br>
             Our core technical competencies include:
             <br>
-            <ul style="color:#414a4fff;padding-left:18px;margin-top:20px">
-              <li style="margin-bottom:5px;padding-left:1em"><span style="color:#cc0033ff">Quantitative analysis</span> of large and small datasets.</li>
-              <li style="margin-bottom:5px;padding-left:1em"><span style="color:#cc0033ff">Forecasting</span> using trends analysis or statistical models.</li>
-              <li style="margin-bottom:5px;padding-left:1em"><span style="color:#cc0033ff">Predictive analytics</span> and <span style="color:#cc0033ff">data modelling</span> to aid in business decision-making.</li>
-              <li style="margin-bottom:5px;padding-left:1em"><span style="color:#cc0033ff">Market research</span> to explore and investigate business opportunities.</li>
-              <li style="margin-bottom:5px;padding-left:1em"><span style="color:#cc0033ff">Data visualisation</span> and <span style="color:#cc0033ff">reporting</span> for clear and engaging presentation of key findings.</li>
-              <li style="margin-bottom:25px;padding-left:1em"><span style="color:#cc0033ff">Report writing</span> to prepare proposals, business cases, analyses of key results.</li>
+            <ul style="padding-left:18px;margin-top:20px">
+              <li style="margin-bottom:5px;padding-left:1em">Quantitative analysis of large and small datasets.</li>
+              <li style="margin-bottom:5px;padding-left:1em">Forecasting using trends analysis or statistical models.</li>
+              <li style="margin-bottom:5px;padding-left:1em">Predictive analytics and data modelling to aid in business decision-making.</li>
+              <li style="margin-bottom:5px;padding-left:1em">Market research to explore and investigate business opportunities.</li>
+              <li style="margin-bottom:5px;padding-left:1em">Data visualisation and reporting for clear and engaging presentation of key findings.</li>
+              <li style="margin-bottom:25px;padding-left:1em">Report writing to prepare proposals, business cases, analyses of key results.</li>
             </ul>
             
-            <p style="color:#414a4fff; background-color:#e5e5e5ff">
+            <p>
             The programming languages with which we are most familiar with are:
-            <ul style="color:#414a4fff;padding-left:18px;margin-top:20px">
+            <ul style="padding-left:18px;margin-top:20px">
               <li style="margin-bottom:3px;padding-left:1em">Python</li>
               <li style="margin-bottom:3px;padding-left:1em">MATLAB</li>
               <li style="margin-bottom:3px;padding-left:1em">GAMS</li>
@@ -281,7 +282,7 @@
               <li style="margin-bottom:3px;padding-left:1em">VBA</li>
               <li style="margin-bottom:20px;padding-left:1em">JavaScript, HTML, CSS</li>
             </ul>
-            <p style="color:#414a4fff; background-color:#e5e5e5ff">Feel free to enquire about any other capabilities that may not be listed.
+            <p>Feel free to enquire about any other capabilities that may not be listed.
             </p>
             </p>
             <a href="mailto:info@hustleconsulting.co.nz?Subject=Hello"><button class="w3-button button1 ms-red-button w3-padding-large w3-large" style="outline:none;margin-top:20px;float:right;"><strong>Contact us</strong></button></a>
@@ -299,12 +300,12 @@
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center" style="background-color:#fff">
-  <div class="w3-xlarge w3-padding-32" style="color:#3a0847ff">
+  <div class="w3-xlarge w3-padding-32">
     <a href="https://www.facebook.com/hustlelimited" target="_blank"><img style="width:28px;height:auto;" class="w3-hover-opacity" src="img/social/F_icon.svg" title="@HustleLimited | Like us on Facebook"></a>
     <a href="https://twitter.com/HustleLimited" target="_blank"><img style="width:28px;height:auto;" class="w3-hover-opacity" src="img/social/Twitter_Logo_WhiteOnBlue.svg" title="@HustleLimited | Follow us on Twitter"></a>
     <a href="https://www.linkedin.com/company/hustlelimited/" target="_blank"><img style="width:28px;height:auto;" class="w3-hover-opacity" src="img/social/LinkedIn-Icon-Square.svg" title="/HustleLimited | Follow us on Linkedin"></i></a>
   </div>
-  <p style="color:#414a4fff">© Copyright 2018 Hustle Limited</p>
+  <p>© Copyright 2018 Hustle Limited</p>
   </footer>
 
 
@@ -377,20 +378,6 @@ $(document).ready(function() {
             x.className = x.className.replace(" w3-show", "");
         }
     }
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-    function scrollFunction() {
-        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-            document.getElementById("myBtn").style.display = "block";
-        } else {
-            document.getElementById("myBtn").style.display = "none";
-        }
-    }
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
     // Get the video
     var video = document.getElementById("myVideo");
     // Get the button
@@ -405,6 +392,66 @@ $(document).ready(function() {
             btn.innerHTML = "<i class='fa fa-play'></i>";
         }
     }
+    // When the user scrolls down 50px from the top of the document, resize the header's font size
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("header_logo-small").style.opacity = "1";
+        document.getElementById("header_logo").style.opacity = "0";
+        
+      // When the user scrolls down 20px from the top of the document, show the button
+      if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        document.getElementById("myBtn").style.opacity = "0.5"
+        }
+      } 
+
+      else if (document.body.scrollTop < 400 || document.documentElement.scrollTop < 400) {
+        document.getElementById("myBtn").style.opacity = "0";
+        
+        if (document.body.scrollTop < 50 || document.documentElement.scrollTop < 50) {
+        document.getElementById("header_logo-small").style.opacity = "0";
+        document.getElementById("header_logo").style.opacity = "1";
+      }
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+    // Javascript to organise the blog page masonry grid
+
+        function resizeGridItem(item){
+          grid = document.getElementsByClassName("grid")[0];
+          rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+          rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+          rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
+            item.style.gridRowEnd = "span "+rowSpan;
+        }
+
+        function resizeAllGridItems(){
+          allItems = document.getElementsByClassName("item");
+          for(x=0;x<allItems.length;x++){
+            resizeGridItem(allItems[x]);
+          }
+        }
+
+        function resizeInstance(instance){
+          item = instance.elements[0];
+          resizeGridItem(item);
+        }
+
+        window.onload = resizeAllGridItems();
+        window.addEventListener("resize", resizeAllGridItems);
+
+        allItems = document.getElementsByClassName("item");
+        for(x=0;x<allItems.length;x++){
+          imagesLoaded( allItems[x], resizeInstance);
+        }
+        
 </script>
 
 <!-- Start of HubSpot Embed Code -->
