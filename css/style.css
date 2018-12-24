@@ -135,6 +135,7 @@ i.arrow {
     background-color:#cc0033ff!important; 
 }
 
+
 .up {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
@@ -193,7 +194,7 @@ i.arrow {
     outline: 1px solid transparent;
 }
 
-.w3-button:hover{color:#fff!important;background-color:#000!important;transition-duration:0.5s}
+.w3-button:hover{color:#fff!important;background-color:#333333!important;transition-duration:0.5s}
 
 .w3-navbutton{
     display:none;
@@ -202,7 +203,7 @@ i.arrow {
 .w3-navbutton a:hover {
     display:block;
     color:#f7f7f7ff!important;
-    background-color:#cc0033ff!important;
+    background-color:#333333!important;
 }
 
 .w3-dropdown:hover .w3-navbutton{
@@ -423,7 +424,7 @@ i.arrow {
 }
 
 #myBtn:hover {
-    background-color: #000; /* Add a dark-grey background on hover */
+    background-color: #333333; /* Add a dark-grey background on hover */
 }
 
 
