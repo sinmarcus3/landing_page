@@ -52,14 +52,14 @@
 
   
 <!-- Navbar -->
-<div id="header">
-    <div class="w3-bar">
-            <a href="index.html" style="text-decoration:none;">
-            <img id="header_logo" src="img/logo.png" alt="">
-            <img id="header_logo-small" src="img/logo-small.png" alt=""></a>
-            <a class="w3-bar-item w3-button w3-right" style="transition-duration:0.5s;font-size:30px; padding-top:15px; padding-bottom:10px" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    </div>
-  
+<div id="header" class="js__header-sticky">
+  <div class="header_container">
+          <a href="index.html" style="text-decoration:none;">
+          <img class="header_logo" src="img/logo.png" alt="">
+          <img class="header_logo-small" src="img/logo-small.png" alt=""></a>
+          <a class="w3-bar-item w3-button w3-right" style="color:#333333;transition-duration:0.5s;font-size:30px; padding-top:15px; padding-bottom:10px" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+  </div>
+
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-navbutton">
       <a href="index.html" class="w3-right-align w3-bar-item w3-padding-large " style="transition-duration:0.5s;text-decoration:none; font-size:18px">Home</a>
@@ -119,7 +119,8 @@
   </footer>
 
 
-<script>
+  
+  <script>
     $(document).ready(function() {
 // https://css-tricks.com/snippets/jquery/smooth-scrolling/
       // Select all links with hashes
@@ -202,29 +203,61 @@ $(document).ready(function() {
             btn.innerHTML = "<i class='fa fa-play'></i>";
         }
     }
-    // When the user scrolls down 50px from the top of the document, resize the header's font size
-    window.onscroll = function() {scrollFunction()};
+    
 
+    // When the user scrolls down 50px from the top of the document, resize the header
+    window.onscroll = function() {scrollFunction()};
     function scrollFunction() {
-      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("header_logo-small").style.opacity = "1";
-        document.getElementById("header_logo").style.opacity = "0";
-        
       // When the user scrolls down 20px from the top of the document, show the button
       if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
         document.getElementById("myBtn").style.opacity = "0.5"
         }
-      } 
-
-      else if (document.body.scrollTop < 400 || document.documentElement.scrollTop < 400) {
+      
+      else {
         document.getElementById("myBtn").style.opacity = "0";
-        
-        if (document.body.scrollTop < 50 || document.documentElement.scrollTop < 50) {
-        document.getElementById("header_logo-small").style.opacity = "0";
-        document.getElementById("header_logo").style.opacity = "1";
-      }
       }
     }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+
+        // Header Sticky
+        var HeaderSticky = function() {
+          'use strict';
+
+          // Handle Header Sticky
+          var handleHeaderSticky = function() {
+            // On loading, check to see if more than 15rem, then add the class
+            if ($('.js__header-sticky').offset().top > 15) {
+              $('.js__header-sticky').addClass('header_shrink');
+            }
+
+            // On scrolling, check to see if more than 15rem, then add the class
+            $(window).on('scroll', function() {
+              if ($('.js__header-sticky').offset().top > 15) {
+                $('.js__header-sticky').addClass('header_shrink');
+              } else {
+                $('.js__header-sticky').removeClass('header_shrink');
+              }
+            });
+          }
+
+          return {
+            init: function() {
+              handleHeaderSticky(); // initial setup for Header Sticky
+            }
+          }
+        }();
+
+        $(document).ready(function() {
+          HeaderSticky.init();
+        });
+
+
     
     // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
