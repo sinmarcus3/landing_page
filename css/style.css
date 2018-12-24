@@ -32,17 +32,17 @@ h1{
 
 h2{
     color:#333333;
-    font-size:20px;
-    font-weight:bold;
-    margin:10px 0;
-    text-transform:uppercase
+    font-size:24px;
+    font-weight:550;
+    margin:10px 0
 }
 
 h3{
     color:#333333;
-    font-size:24px;
-    font-weight:550;
-    margin:10px 0
+    font-size:20px;
+    font-weight:400;
+    margin:10px 0;
+    text-transform:uppercase
 }
 
 h4{
@@ -78,7 +78,7 @@ hr {
     border-width: 1.5px;
     width: 20%;
     border-color:#cc0033;
-    opacity:0.5
+    opacity:1
   }
 
 
@@ -144,11 +144,6 @@ i.arrow {
     color:#fff!important;
     background-color:#3a0847ff!important
 }
-
-.hide-image {
-    overflow:hidden;
-}
-
 
 .w3-white,.w3-hover-white:hover{color:#f7f7f7ff!important;background-color:#3a0847ff!important}
 .w3-black,.w3-hover-black:hover{color:#f7f7f7ff!important;background-color:#3a0847ff!important}
@@ -462,42 +457,99 @@ i.arrow {
 
 .grid {
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
-    grid-auto-rows: 30px;
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-auto-rows: 40px;
   }
   
   /* Non-grid specific CSS */  
 
   .item {
-    background-color: #ffffff;
+    background-color: #f7f7f7;
   }
   
   .photothumb{
     width: 100%;
   }
   
-  .title {
-    padding: 1px 10px;
-   }
-  
-  .project .title{
-    background-color: #333333;
+
+  .title{
+    padding-left:0em;
+    padding-right:0em;
+  }
+
+  .title i{
+      margin-left:1px;
+      color:#cc0033ff;
+      opacity:1
+  }
+
+  .content a{
+    outline:none;
+    text-decoration:none
+  }
+
+  .content a:hover{
+    outline:none;
+    text-decoration:none;
+    opacity:0.5;
+    transition:0.5s
   }
   
-  .blog .title{
-    background-color: #333333;
+  .date{
+    font-weight:bold;
+    color:#cc0033ff;
+    margin-bottom:4px
   }
-  
-  .photo .title{
-    background-color: #333333;
+
+  .hr_line{
+    margin-left:0em;
+    margin-bottom:5px;
+    margin-bottom:5px
   }
-  
-  .desc{
-    padding: 10px 10px 5px 10px;
+
+.selector {
+    margin-bottom:20px;
+}
+
+  .selector a{
+    outline:none;
+    text-decoration:none;
+}
+
+  .selector a:hover{
+      outline:none;
+      text-decoration:none;
+      opacity:0.5;
+      transition:0.5s
   }
-  
-  
-  .desc p{
-    margin-bottom: 0px;
+
+
+.wrapper {
+      display: flex;
+      justify-content:space-between;
+      height:auto;
   }
+
+
+.sidebar {
+    position: sticky;
+    margin-top:20px;
+    margin-right:150px;
+    margin-left:20px;
+    top: 120px;
+    padding: auto;
+    color:#f7f7f7ff;
+    background-color: #f7f7f7ff;
+    width:auto;
+    height:400px;
+    overflow:visible
+}
+
+
+@media only screen and (max-width:700px) {
+    .sidebar {
+        display:none;
+    }
+
+    }
