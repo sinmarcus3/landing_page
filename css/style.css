@@ -102,7 +102,13 @@ hr {
 
 
 .w3-content{max-width:980px;margin:auto}.w3-rest{overflow:hidden}
-.w3-hide{display:none!important}.w3-show-block,.w3-show{display:block!important}.w3-show-inline-block{display:inline-block!important}
+.w3-hide{display:none!important}
+
+.w3-show{
+    display:block!important;
+}
+
+.w3-show-inline-block{display:inline-block!important}
 .w3-container,.w3-panel{padding:0.01em 16px}.w3-panel{margin-top:16px;margin-bottom:16px}
 
 .w3-tiny{font-size:10px!important}.w3-small{font-size:12px!important}.w3-medium{font-size:15px!important}.w3-large{font-size:16px!important}
@@ -193,7 +199,8 @@ i.arrow {
     width:200px;
     height:auto;
     padding-top:15px;
-    padding-left:20px;
+    padding-bottom:15px;
+    padding-left:25px;
     margin:auto;
     transition: 0.3s;
     outline: 1px solid transparent;
@@ -206,11 +213,17 @@ i.arrow {
     float:left;
     width:70px;
     height:auto;
-    padding-top:7px;
-    padding-left:20px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:15px;
     margin: auto;
     transition: 0.3s;
     outline: 1px solid transparent;
+}
+
+.navButtonBorder{
+    border-style:solid;
+    border-color:#333333;
 }
 
 
