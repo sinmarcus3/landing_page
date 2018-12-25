@@ -244,8 +244,8 @@ i.arrow {
 
 .w3-navbutton a:hover {
     display:block;
-    color:#f7f7f7ff!important;
-    background-color:#333333!important;
+    color:#333333!important;
+    background-color:#f7f7f7ff!important;
 }
 
 .w3-dropdown:hover .w3-navbutton{
