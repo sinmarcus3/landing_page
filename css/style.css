@@ -258,7 +258,8 @@ i.arrow {
 }
 
 .header_shrink .navButtonBorder{
-    border-style:none;
+    border-style:solid;
+    border-color:#fff;
 }
 
 .header_shrink .header_logo {
