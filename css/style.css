@@ -91,7 +91,6 @@ hr {
 .w3-hoverable tbody tr:hover,.w3-ul.w3-hoverable li:hover{background-color:#ccc}.w3-centered tr th,.w3-centered tr td{text-align:center}
 .w3-table td,.w3-table th,.w3-table-all td,.w3-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
 .w3-table th:first-child,.w3-table td:first-child,.w3-table-all th:first-child,.w3-table-all td:first-child{padding-left:16px}
-.w3-btn,.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
 
 .w3-bar-block .w3-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
 .w3-bar-block.w3-center .w3-bar-item{text-align:center}.w3-block{display:block;width:100%}
@@ -196,6 +195,8 @@ i.arrow {
     padding-left: 0.3rem;
     padding-right: 0.3rem;
     transition-duration: 0.3s;
+    background-color:#3a0847ff;
+    
 }
 
 .header_logo{
@@ -226,11 +227,39 @@ i.arrow {
     outline: 1px solid transparent;
 }
 
+.w3-btn,.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+
+.w3-button{
+    color:#333333;
+    font-size:30px;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+.header_shrink .w3-button{
+    color:#fff;
+}
+
+.w3-button:hover{
+    color:#fff!important;
+    background-color:#333333!important;
+    transition-duration:0.5s
+}
+
+.header_shrink .w3-button:hover{
+    color:#333333!important;
+    background-color:#fff!important;
+    transition-duration:0.5s
+}
+
 .navButtonBorder{
     border-style:solid;
     border-color:#333333;
 }
 
+.header_shrink .navButtonBorder{
+    border-style:none;
+}
 
 .header_shrink .header_logo {
     opacity:0;
@@ -240,8 +269,6 @@ i.arrow {
     opacity:1;
     
 }
-
-.w3-button:hover{color:#fff!important;background-color:#333333!important;transition-duration:0.5s}
 
 .w3-navbutton{
     display:none;
