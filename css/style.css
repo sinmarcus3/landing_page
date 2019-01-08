@@ -241,8 +241,8 @@ i.arrow {
 }
 
 .w3-button:hover{
-    color:#333333!important;
-    background-color:#fff!important;
+    color:#fff!important;
+    background-color:#333333!important;
     transition-duration:0.5s
 }
 
