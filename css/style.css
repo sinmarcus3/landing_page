@@ -171,7 +171,7 @@ i.arrow {
 #header {
     position:fixed;
     color:#333333;
-    background-color:#fff;
+    background-color:#3a0847ff;
     top:0;
     width: 100%; /* Full width */
     z-index:1;
@@ -195,7 +195,7 @@ i.arrow {
     padding-left: 0.3rem;
     padding-right: 0.3rem;
     transition-duration: 0.3s;
-    background-color:#3a0847ff;
+    background-color:#fff;
     
 }
 
@@ -230,36 +230,36 @@ i.arrow {
 .w3-btn,.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
 
 .w3-button{
-    color:#333333;
+    color:#fff;
     font-size:30px;
     padding-top:15px;
     padding-bottom:15px;
 }
 
 .header_shrink .w3-button{
-    color:#fff;
+    color:#333333;
 }
 
 .w3-button:hover{
-    color:#fff!important;
-    background-color:#333333!important;
-    transition-duration:0.5s
-}
-
-.header_shrink .w3-button:hover{
     color:#333333!important;
     background-color:#fff!important;
     transition-duration:0.5s
 }
 
+.header_shrink .w3-button:hover{
+    color:#fff!important;
+    background-color:#333333!important;
+    transition-duration:0.5s
+}
+
 .navButtonBorder{
     border-style:solid;
-    border-color:#333333;
+    border-color:#fff;
 }
 
 .header_shrink .navButtonBorder{
     border-style:solid;
-    border-color:#fff;
+    border-color:#333333;
 }
 
 .header_shrink .header_logo {
