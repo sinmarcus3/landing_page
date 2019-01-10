@@ -330,6 +330,11 @@ i.arrow {
     width:55%;
 }
 
+.text-left-60{
+    float:left;
+    width:60%;
+}
+
 .text-left-80{
     float:left;
     width:80%;
@@ -346,7 +351,7 @@ i.arrow {
 }
 
 .shrink-2-mobile{
-    width:500px;
+    width:60vh;
 }
 
 .shrink-2-mobile2{
@@ -367,6 +372,10 @@ i.arrow {
         float:left;
         width:100%;
     }
+    .text-left-60{
+        float:left;
+        width:100%;
+    }
     .text-right-60{
         float:left;
         width:100%;
@@ -384,10 +393,10 @@ i.arrow {
         width:100%;
     }
     .shrink-2-mobile{
-        width:250px;
+        width:40vh;
     }
     .shrink-2-mobile2{
-        width:300px;
+        width:40vh;
     }
     .shrink-2-mobile3{
         width:100%;
