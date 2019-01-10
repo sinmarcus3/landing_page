@@ -434,13 +434,13 @@ i.arrow {
     
 }
 
-@media only screen and (max-width:1961px) {
+@media only screen and (max-width:2000px) {
     .bg-wideimg{
     background: none!important;
     }
 }
 
-@media only screen and (min-width:1962px) {
+@media only screen and (min-width:2000px) {
     .responsive-video{display:none!important;}
     .video-color{display:none!important;}
 }
