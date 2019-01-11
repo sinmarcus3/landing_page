@@ -184,8 +184,8 @@ i.arrow {
     overflow:hidden;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .header_shrink .header_container{
