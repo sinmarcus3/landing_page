@@ -254,11 +254,13 @@ i.arrow {
 .navButtonBorder{
     border-style:solid;
     border-color:#fff;
+    border-width: 2px
 }
 
 .header_shrink .navButtonBorder{
     border-style:solid;
     border-color:#333333;
+    border-width: 2px
 }
 
 .header_shrink .header_logo {
