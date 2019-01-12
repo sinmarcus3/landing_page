@@ -622,8 +622,8 @@ i.arrow {
 .sidebar {
     position: sticky;
     margin-top:20px;
-    margin-right:150px;
-    margin-left:20px;
+    margin-right:10%;
+    margin-left:10%;
     top: 120px;
     padding: auto;
     color:#f7f7f7ff;
