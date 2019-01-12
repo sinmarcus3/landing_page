@@ -298,6 +298,8 @@ i.arrow {
 .w3-opacity,.w3-hover-opacity:hover{opacity:0.60;transition-duration: 0.5s;}.w3-opacity-off,.w3-hover-opacity-off:hover{opacity:1}
 .w3-opacity-max{opacity:0.25}.w3-opacity-min{opacity:0.75}
 
+.left_w_sidebar{margin-left:20%}
+
 .s-swiper {
     position: relative;
     width: 100%;
@@ -314,11 +316,15 @@ i.arrow {
     float:right;
 }
 
+.left_sidebar{
+    margin-left:20%;
+    max-width:980px;
+}
+
 .center{
     text-align:left;
     padding-left:0px;
 }
-
 
 .text-left-66{
     float:left;
@@ -363,6 +369,11 @@ i.arrow {
       margin-left:0px;
       float:left;
       width:100%;
+    }
+    .left_sidebar{
+        margin-left:0%;
+        float:left;
+        width:100%
     }
     .center{
         text-align:left;
@@ -622,7 +633,7 @@ i.arrow {
 .sidebar {
     position: sticky;
     margin-top:20px;
-    margin-right:10%;
+    margin-right:5%;
     margin-left:5%;
     top: 120px;
     padding: auto;
