@@ -7,10 +7,17 @@ body, html {
   
   p{
     font-family: "Courier New", Courier, monospace;
-    color: #000000;
+    color: #fff;
     font-weight: 600;
   }
   
+  a{
+    font-family: "Courier New", Courier, monospace;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+
 
   .bgimg {
     background-image: url('/img/spotlight_img_2.jpg');
