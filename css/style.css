@@ -6,13 +6,13 @@ body, html {
   }
   
   p{
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Montserrat", sans-serif;
     color: #fff;
     font-weight: 600;
   }
   
   a{
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Montserrat", sans-serif;
     color: #fff;
     font-weight: 600;
   }
@@ -26,7 +26,7 @@ body, html {
     background-size: cover;
     position: relative;
     color: #cc0033ff;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Montserrat", sans-serif;
     font-size: 25px;
   }
 
