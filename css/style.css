@@ -17,7 +17,11 @@ body, html {
     font-weight: 600;
   }
   
-
+  a:hover {
+    opacity:0.7;
+    color:#cc0033ff;
+    background-color: #fff200;
+  }
 
   .bgimg {
     background-image: url('/img/spotlight_img_2.jpg');
