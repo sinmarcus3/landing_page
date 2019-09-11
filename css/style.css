@@ -36,11 +36,10 @@ body, html {
 
 
   .header_logo{
-    width:70px;
+    width:80px;
     height:auto;
     padding-top:20px;
   }
-
 
   .topleft {
     position: absolute;
