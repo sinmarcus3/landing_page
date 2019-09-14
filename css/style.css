@@ -19,8 +19,8 @@ body, html {
   
   a:hover {
     opacity:0.7;
-    color:#cc0033ff;
-    background-color: #fff200;
+    color:#e33056ff;
+    background-color: #f7e39cff;
   }
 
   .bgimg {
@@ -29,7 +29,7 @@ body, html {
     background-position: center;
     background-size: cover;
     position: relative;
-    color: #cc0033ff;
+    color: #e33056ff;
     font-family: "Montserrat", sans-serif;
     font-size: 25px;
   }
@@ -65,6 +65,6 @@ body, html {
     margin: auto;
     width: 40%;
     height:3px;
-    background-color: #cc0033ff;
+    background-color: #e33056ff;
     border:none;
   }
