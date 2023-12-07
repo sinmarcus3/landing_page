@@ -1,2 +1,2 @@
-# 3t company
-Basic site for 3t company ltd
+# Landing page
+Basic site for M C SIN Ltd
